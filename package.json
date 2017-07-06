@@ -1,22 +1,22 @@
 {
-  "name": "hnpwa",
+  "name": "redux-todo",
   "version": "1.0.0",
-  "description": "Hacker News PWA",
+  "description": "Redux Todo App",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server -d",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arpitgupta31/hnpwa.git"
+    "url": "git+https://github.com/arpitgupta31/redux-todo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arpitgupta31/hnpwa/issues"
+    "url": "https://github.com/arpitgupta31/redux-todo/issues"
   },
-  "homepage": "https://github.com/arpitgupta31/hnpwa#readme",
+  "homepage": "https://github.com/arpitgupta31/redux-todo#readme",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
