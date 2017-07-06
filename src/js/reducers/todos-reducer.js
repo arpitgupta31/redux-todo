@@ -7,9 +7,9 @@ export default function todos(state = [], action){
     case TOGGLE_TODO:
       return state.map( (todo, index) => {
           if(index === action.index) {
-            return Object.assign({}, todo, { completed: !todo.completed })
+            return Object.assign({}, todo, { completed: !todo.completed });
           }else{
-            return todo
+            return todo;
           }
         });
     default:

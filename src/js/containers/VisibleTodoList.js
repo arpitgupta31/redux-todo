@@ -4,8 +4,6 @@ import TodoList from '../components/TodoList';
 
 const { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } = VisibilityFilters;
 
-
-
 const getVisibleTodos = ( todos, filter) => {
   switch(filter){
     case SHOW_ALL:
@@ -20,17 +18,17 @@ const getVisibleTodos = ( todos, filter) => {
 const mapStateToProps = state => {
   return {
     todos: getVisibleTodos(state.todos, state.visibilityFilter)
-  }
-}
+  };
+};
 
 const mapDispatchToProps = dispatch => {
   return {
     onTodoClick: id => {
       dispatch(toggleTodo(id))
-    }
-  }
-}
+    },
+  };
+};
 
-const VisibleTodoList = connect(mapStateToProps, mapDispatchToProps)(TodoList)
+const VisibleTodoList = connect(mapStateToProps, mapDispatchToProps)(TodoList);
 
-export default VisibleTodoList
+export default VisibleTodoList;
