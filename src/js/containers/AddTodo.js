@@ -24,7 +24,7 @@ let AddTodo = ({ dispatch }) => {
             }}
           />
           <span className="input-group-btn">
-            <button className="btn btn-default" type="submit">
+            <button className="btn btn-primary" type="submit">
               Add Todo
             </button>
           </span>
